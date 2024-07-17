@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+
+  <title>CURL EPK</title>
+
+  <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
+
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      background-color: #1F4560;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: scroll;
+      color: oldlace;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 100;
+      text-align: justify;
+    
+    }
+
+    #space,
+    .stars {
+      overflow: scroll;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -2000;
+    }
+
+    .stars {
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+      background-repeat: repeat;
+      background-size: 200px 200px;
+      background-color: #1F4560;
+    }
+
+    .header {
+      display: block;
+    }
+
+    p {
+      margin: 30px;
+    }
+
+    #bandImage {
+      width: 100vw;
+    }
+
+    #logo {
+      display: flex;
+      width: 40vw;
+      padding: 30px;
+    }
+
+    .nav {
+      display: flex;
+      color: oldlace;
+    }
+
+    a {
+      padding: 10%;
+    }
+
+    .ph-play {
+      color: #1F4560;
+      text-decoration: none;
+      padding: 10%;
+    }
+
+    p {
+      font-weight: 100;
+    }
+
+    .capital {
+      font-style: oblique;
+      font-size: x-large;
+    }
+
+    .loveTo {
+      font-style: italic;
+      font-weight: bolder;
+      margin-left: 30px;
+    }
+
+    .buttonMusic {
+      background-color: oldlace;
+      color: #1F4560;
+      font-size: medium;
+      text-decoration: none;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+    }
+
+    h1 {
+      margin-left: 30px;
+    }
+
+    .curl {
+      font-size: large;
+      padding: 1%;
+    }
+
+    .video {
+      display: inline-block;
+      align-items: center;
+      margin: 30px;
+    }
+
+    .ph-play,
+    .ph-bold {
+      font-size: 50px;
+      color: #1F4560;
+      text-decoration: none;
+    }
+
+    .buttonsForMusicAll {
+      margin: 30px;
+    }
+
+    button {
+      border-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .albums {
+      display: flex;
+      justify-content: space-evenly;
+     margin: 30px;
+
+    }
+
+    @media screen and (max-width: 700px) {
+
+      .albums,
+      .complex,
+      .exit,
+      .shapeshifters,
+      .okeanos {
+        display: inline-block;
+        justify-content: center;
+        margin: 30px;
+       
+      }
+    }
+
+    .complex {
+      background-image: url("https://i.ibb.co/NyVN7sR/01-We-Are-Complex.jpg");
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+
+    }
+
+    .exit {
+      background-image: url("https://i.ibb.co/ZS4GB1F/02-Exit-Real-Life.jpg");
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+
+    }
+
+    .okeanos {
+      background-image: url("https://i.ibb.co/XkJPw4q/00-Les-Enfants-d-Okeanos-soundtrack.jpg");
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+
+    }
+
+    .shapeshifters {
+      background-image: url("https://i.ibb.co/kMRBHkH/03-Shapeshifters.jpg");
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+
+    }
+
+    .label {
+      display: inline;
+      background-color: #1F4560;
+      border-color: oldlace;
+      max-width: 50px;
+      word-wrap: initial;
+      color: oldlace;
+    }
+
+    .labelText {
+      margin: 30px;
+    }
+
+    .socialList {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      text-decoration: none;
+      font-size: 50px;
+      color: oldlace;
+    }
+
+    .ph-envelope,
+    .ph-parallelogram,
+    .ph-youtube-logo,
+    .ph-facebook-logo,
+    .ph-soundcloud-logo,
+    .ph-spotify-logo,
+    .ph-instagram-logo,
+    .ph-parallelogram {
+
+      font-size: 50px;
+      color: oldlace;
+      list-style: none;
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="space">
+    <div class="stars" scrollable="true">
+      <div class="header">
+        <img id="bandImage" class="header" src="https://i.ibb.co/pdgHWFz/option-3.png"
+          alt="Band picture of singer in foreground and band in background in black and white" border-style="0">
+        <navbar class="nav">
+          <img id="logo" class="header" src="https://i.ibb.co/HzNwnsC/Asset-6.png" alt="CURL logo" border-style="0">
+        </navbar>
+      </div>
+
+      <div class="container">
+        <h1>BIOGRAPHY</h1>
+        <p><span class="capital">A</span>nglo-French quartet Curl are set to release their fourth album,
+          Interferometry. Final mixes
+          and post production work are about to be completed. Photography, text/logo/fonts and artwork are being
+          developed.
+          To make all of this happen CURL are looking for Professional Management to help guide us through the right
+          choices for this release. We are label free and have a wealth of industry experience but need that
+          guidance and savvy for the current market. We are supremely confident in this record and will deliver
+          onstage to support that. See below for private listening links.
+          <br>
+          <br>
+          <span class="loveTo">We’d love to hear from you straightaway ... ahead of any release strategies. </span>
+          <br>
+          <br>
+          Initially an Electronic project started by French Producer and Guitarist Frank Amendola (Corpus Delicti)
+          at the start of the Millennium. Albums Ultimate Station and Inner were released (EMI France). Curl has
+          since developed an international collaboration. Two of the band from from the South of France (Nice
+          and Marseille), two from the South Coast of England (Portsmouth). Since 2009 the music has featured the
+          soaring, jazz influenced vocals and keyboards of Hayley Alker (Helsinki), guitar from Wil Garcia (Teenage
+          Sin Taste), and drums from UK Producer Jonny Callender (Cranes, Vex).
+          <br>
+          <br>
+          Three albums have followed, We Are Complex (2011), Exit Real Life (2014) and Shapeshifters (2019). This
+          and EP / compilations has been consistently supported by quality ‘Live’ shows across Europe.
+          <br>
+          <br>
+          In 2015 ‘Award winning’ French film Les Enfants d’Okeanos featured a soundtrack that was
+          exclusively from Curl and from the internationally acclaimed Director Fabrice Begotti.
+          <br>
+          <br>
+          <span>CURL</span> offer new wave, dreamy productions that will send the listener through an emotional
+          sonic
+          journey. Angelic combinations of twisting guitar chime, fluttering synthesizers and beastly rhythms
+          are married to Goddess like vocal melodies - intense sonic sculptures for the audio palette.
+          <br>
+          <br>
+          CURL are ...
+          <br>
+          <br>
+          HAYLEY ALKER : Vocals, Piano, Keyboards
+          <br>
+          <br>
+          FRANK AMENDOLA : Sound Design, Bass, Guitars
+          <br>
+          <br>
+          J D CALLENDER : Drums, Percussion
+          <br>
+          <br>
+          WIL GARCIA : Guitars, Noise
+        </p>
+
+        <h1>MUSIC</h1>
+        <div class="buttonsForMusicAll">
+          <div class="buttonsForMusic">
+            <button class="buttonMusic">
+              <a
+                href="https://soundcloud.com/curl-uk-france/sets/curl-album-2024-taster-private/s-DRKyd5v9b2Q?si=0c0bf32248a54ca5a88a06a1c02bed2e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><i
+                  class="ph-play ph-bold"></i>
+              </a>
+            </button>
+            <div class="label">
+              <p class="labelText"> Private link to development mixes from the forthcoming album
+                'Interferometry'.</p>
+            </div>
+          </div>
+
+          <div class="buttonsForMusic">
+            <button class="buttonMusic">
+              <a
+                href="https://soundcloud.com/curl-uk-france/lonely-hearts-live-kings-uk/s-b3pHV0jMs5A?in=curl-uk-france/sets/curl-album-2024-taster-private/s-DRKyd5v9b2Q&si=5ae6956801a045299e84eeadcfd4db11&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+                <i class="ph-play ph-bold"></i>
+              </a>
+            </button>
+            <div class="label">
+              <p class="labelText"> Link to CURL performing 'Lonely Hearts', Live at the Loft.</p>
+            </div>
+          </div>
+        </div>
+
+        <h1>RELEASES</h1>
+        <div class="albums">
+
+          <button class="complex albums">
+            <a href="https://d-monic.bandcamp.com/album/we-are-complex">
+            </a>
+          </button>
+
+          <button class="exit albums">
+            <a href="https://d-monic.bandcamp.com/album/exit-real-life">
+            </a>
+          </button>
+
+          <button class="okeanos albums">
+            <a href="https://curlukfr.bandcamp.com/album/okeanos-original-soundtrack">
+            </a>
+          </button>
+
+          <button class="shapeshifters albums">
+            <a href="https://bethshalomrecords.bandcamp.com/album/shapeshifters">
+            </a>
+          </button>
+        </div>
+
+        <h1>VIDEO</h1>
+        <section class="videos">
+          <iFrame width="500" height="300" src="https://www.youtube.com/embed/qn0gzJHURtk?si=bSLYVf9PfJiOQW6s"
+            title="YouTube video player" frameborder="0" class="video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iFrame>
+          <iFrame width="500" height="300" src="https://www.youtube.com/embed/fghs6AJVhyc?si=8-s_Brkehfn7Egpg"
+            title="YouTube video player" frameborder="0" class="video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iFrame>
+        </section>
+
+        <h1>LINKS</h1>
+        <section class="socials">
+
+          <ul class="socialList">
+            <li>
+              <a href="https://www.facebook.com/curlukfr/" class="socialList">
+                <i class="ph-bold ph-facebook-logo socialList"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://soundcloud.com/curlukfr" class="socialList">
+                <i class="ph-bold ph-soundcloud-logo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/curl_ukfr_official/" class="socialList">
+                <i class="ph-bold ph-instagram-logo socialList"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/artist/1iaM4Y9Ns6FcVwJ0Zp177O?si=o1Pue1GUTjSEmg293nsQiA"
+                class="socialList">
+                <i class="ph-bold ph-spotify-logo socialList"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@CURLmusicTV" class="socialList">
+                <i class="ph-bold ph-youtube-logo socialList"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://curlukfr.bandcamp.com/" class="socialList">
+                <i class="ph-bold ph-parallelogram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:curlukfrance@gmail.com" class="socialList">
+                <i class="ph-bold ph-envelope socialList"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
