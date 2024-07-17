@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -8,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
   <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
@@ -17,10 +17,6 @@
   <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
 
   <style>
-    :root {
-      color-scheme: light dark;
-    }
-
     body {
       background-color: #1F4560;
       background-repeat: no-repeat;
@@ -30,7 +26,7 @@
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 100;
       text-align: justify;
-    
+
     }
 
     #space,
@@ -152,7 +148,7 @@
     .albums {
       display: flex;
       justify-content: space-evenly;
-     margin: 30px;
+      margin: 30px;
 
     }
 
@@ -241,7 +237,6 @@
       width: 50px;
       height: 50px;
     }
-    
   </style>
 </head>
 
@@ -251,9 +246,9 @@
       <div class="header">
         <img id="bandImage" class="header" src="https://i.ibb.co/pdgHWFz/option-3.png"
           alt="Band picture of singer in foreground and band in background in black and white" border-style="0">
-        <navbar class="nav">
+        <div class="nav">
           <img id="logo" class="header" src="https://i.ibb.co/HzNwnsC/Asset-6.png" alt="CURL logo" border-style="0">
-        </navbar>
+        </div>
       </div>
 
       <div class="container">
@@ -311,12 +306,12 @@
         <h1>MUSIC</h1>
         <div class="buttonsForMusicAll">
           <div class="buttonsForMusic">
-            <button class="buttonMusic">
-              <a
-                href="https://soundcloud.com/curl-uk-france/sets/curl-album-2024-taster-private/s-DRKyd5v9b2Q?si=0c0bf32248a54ca5a88a06a1c02bed2e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><i
-                  class="ph-play ph-bold"></i>
-              </a>
-            </button>
+            <a
+              href="https://soundcloud.com/curl-uk-france/sets/curl-album-2024-taster-private/s-DRKyd5v9b2Q?si=0c0bf32248a54ca5a88a06a1c02bed2e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+              <button class="buttonMusic">
+                <i class="ph-play ph-bold"></i>
+              </button>
+            </a>
             <div class="label">
               <p class="labelText"> Private link to development mixes from the forthcoming album
                 'Interferometry'.</p>
@@ -324,12 +319,12 @@
           </div>
 
           <div class="buttonsForMusic">
-            <button class="buttonMusic">
-              <a
-                href="https://soundcloud.com/curl-uk-france/lonely-hearts-live-kings-uk/s-b3pHV0jMs5A?in=curl-uk-france/sets/curl-album-2024-taster-private/s-DRKyd5v9b2Q&si=5ae6956801a045299e84eeadcfd4db11&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+            <a
+              href="https://soundcloud.com/curl-uk-france/lonely-hearts-live-kings-uk/s-b3pHV0jMs5A?in=curl-uk-france/sets/curl-album-2024-taster-private/s-DRKyd5v9b2Q&si=5ae6956801a045299e84eeadcfd4db11&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+              <button class="buttonMusic">
                 <i class="ph-play ph-bold"></i>
-              </a>
-            </button>
+              </button>
+            </a>
             <div class="label">
               <p class="labelText"> Link to CURL performing 'Lonely Hearts', Live at the Loft.</p>
             </div>
@@ -339,81 +334,84 @@
         <h1>RELEASES</h1>
         <div class="albums">
 
-          <button class="complex albums">
-            <a href="https://d-monic.bandcamp.com/album/we-are-complex">
-            </a>
-          </button>
 
-          <button class="exit albums">
-            <a href="https://d-monic.bandcamp.com/album/exit-real-life">
-            </a>
-          </button>
+          <a href="https://d-monic.bandcamp.com/album/we-are-complex">
+            <button class="complex albums">
+            </button>
+          </a>
 
-          <button class="okeanos albums">
-            <a href="https://curlukfr.bandcamp.com/album/okeanos-original-soundtrack">
-            </a>
-          </button>
 
-          <button class="shapeshifters albums">
-            <a href="https://bethshalomrecords.bandcamp.com/album/shapeshifters">
-            </a>
-          </button>
+          <a href="https://d-monic.bandcamp.com/album/exit-real-life">
+            <button class="exit albums">
+            </button>
+          </a>
+
+          <a href="https://curlukfr.bandcamp.com/album/okeanos-original-soundtrack">
+            <button class="okeanos albums">
+            </button>
+          </a>
+
+          <a href="https://bethshalomrecords.bandcamp.com/album/shapeshifters">
+            <button class="shapeshifters albums">
+            </button>
+          </a>
+
         </div>
 
         <h1>VIDEO</h1>
-        <section class="videos">
-          <iFrame width="500" height="300" src="https://www.youtube.com/embed/qn0gzJHURtk?si=bSLYVf9PfJiOQW6s"
+        <div class="videos">
+          <object width="500" height="300" src="https://www.youtube.com/embed/qn0gzJHURtk?si=bSLYVf9PfJiOQW6s"
             title="YouTube video player" frameborder="0" class="video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iFrame>
-          <iFrame width="500" height="300" src="https://www.youtube.com/embed/fghs6AJVhyc?si=8-s_Brkehfn7Egpg"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></object>
+          <object width="500" height="300" src="https://www.youtube.com/embed/fghs6AJVhyc?si=8-s_Brkehfn7Egpg"
             title="YouTube video player" frameborder="0" class="video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iFrame>
-        </section>
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></object>
+        </div>
 
         <h1>LINKS</h1>
-        <section class="socials">
+        <div class="socials">
 
-          <ul class="socialList">
-            <li>
+          <div class="socialList">
+            <div>
               <a href="https://www.facebook.com/curlukfr/" class="socialList">
                 <i class="ph-bold ph-facebook-logo socialList"></i>
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="http://soundcloud.com/curlukfr" class="socialList">
                 <i class="ph-bold ph-soundcloud-logo"></i>
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="https://www.instagram.com/curl_ukfr_official/" class="socialList">
                 <i class="ph-bold ph-instagram-logo socialList"></i>
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="https://open.spotify.com/artist/1iaM4Y9Ns6FcVwJ0Zp177O?si=o1Pue1GUTjSEmg293nsQiA"
                 class="socialList">
                 <i class="ph-bold ph-spotify-logo socialList"></i>
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="https://www.youtube.com/@CURLmusicTV" class="socialList">
                 <i class="ph-bold ph-youtube-logo socialList"></i>
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="https://curlukfr.bandcamp.com/" class="socialList">
                 <i class="ph-bold ph-parallelogram"></i>
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a href="mailto:curlukfrance@gmail.com" class="socialList">
                 <i class="ph-bold ph-envelope socialList"></i>
               </a>
-            </li>
-          </ul>
-        </section>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
