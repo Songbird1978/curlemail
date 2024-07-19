@@ -16,35 +16,256 @@
 
   <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
 
+  <style>
+    table {
+      background-color: #1F4560;
+      background-size: cover;
+      overflow: scroll;
+      color: oldlace;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 100;
+      text-align: justify;
+    }
 
+    #space,
+    .stars {
+      overflow: scroll;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -2000;
+    }
+
+    .stars {
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+      background-repeat: repeat;
+      background-size: 200px 200px;
+      background-color: #1F4560;
+    }
+
+    .header {
+      display: block;
+    }
+
+    p {
+      margin: 30px;
+    }
+
+    #bandImage {
+      width: 100vw;
+    }
+
+    #logo {
+      display: flex;
+      width: 40vw;
+      padding: 30px;
+    }
+
+    .nav {
+      display: flex;
+      color: oldlace;
+    }
+
+    a {
+      padding: 10%;
+    }
+
+    .ph-play {
+      color: #1F4560;
+      text-decoration: none;
+      padding: 10%;
+    }
+
+    p {
+      font-weight: 100;
+    }
+
+    .capital {
+      font-style: oblique;
+      font-size: x-large;
+    }
+
+    .loveTo {
+      font-style: italic;
+      font-weight: bolder;
+      margin-left: 30px;
+    }
+
+    .buttonMusic {
+      background-color: oldlace;
+      color: #1F4560;
+      font-size: medium;
+      text-decoration: none;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+    }
+
+    h1 {
+      margin-left: 30px;
+    }
+
+    .curl {
+      font-size: large;
+      padding: 1%;
+    }
+
+    .video {
+      display: inline-block;
+      align-items: center;
+      margin: 30px;
+    }
+
+    .ph-play,
+    .ph-bold {
+      font-size: 50px;
+      color: #1F4560;
+      text-decoration: none;
+    }
+
+    .buttonsForMusicAll {
+      margin: 30px;
+    }
+
+    button {
+      border-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .albums {
+      display: inline-block;
+      justify-content: space-evenly;
+      margin: 30px;
+
+    }
+
+/*    @media screen and (max-width: 700px) {
+
+      .albums,
+      .complex,
+      .exit,
+      .shapeshifters,
+      .okeanos {
+        display: inline-block;
+        justify-content: center;
+        margin: 30px;
+      }
+    }
+*/
+    .complex {
+      /*background-image: url("https://i.ibb.co/NyVN7sR/01-We-Are-Complex.jpg");*/
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+    }
+
+    .exit {
+      background-image: url("https://i.ibb.co/ZS4GB1F/02-Exit-Real-Life.jpg");
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+    }
+
+    .okeanos {
+      background-image: url("https://i.ibb.co/XkJPw4q/00-Les-Enfants-d-Okeanos-soundtrack.jpg");
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+    }
+
+    .shapeshifters {
+      background-image: url("https://i.ibb.co/kMRBHkH/03-Shapeshifters.jpg");
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+      text-decoration: none;
+    }
+
+    .label {
+      display: inline;
+      background-color: #1F4560;
+      border-color: oldlace;
+      max-width: 50px;
+      word-wrap: initial;
+      color: oldlace;
+    }
+
+    .labelText {
+      margin: 30px;
+    }
+
+    .socialList {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      text-decoration: none;
+      font-size: 50px;
+      color: oldlace;
+    }
+
+    .ph-envelope,
+    .ph-parallelogram,
+    .ph-youtube-logo,
+    .ph-facebook-logo,
+    .ph-soundcloud-logo,
+    .ph-spotify-logo,
+    .ph-instagram-logo,
+    .ph-parallelogram {
+
+      font-size: 50px;
+      color: oldlace;
+      list-style: none;
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
 </head>
 
 
-<table id="space" style=" width:100%; cellpadding:0; cellspacing:0; border:2; scrollable:true;
-  overflow: scroll; top:0; bottom:0; left:0; right:0; background-color:#1F4560;
-  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; font-weight: 100;
-  text-align: justify">
+<table id="space" max-width="600px" cellpadding="0" cellspacing="0" border="2" class="stars" scrollable="true"
+  overflow="scroll" position="" top="0" bottom="0" left="0" right="0" background-color="#1F4560" background-image="
+radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0))" background-repeat="repeat"
+  font-family=" 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" font-weight=" 100"
+  text-align=" justify">
 
   <tr>
     <td class="header">
       <img id="bandImage" class="header" src="https://i.ibb.co/pdgHWFz/option-3.png"
-        alt="Band picture of singer in foreground and band in background in black and white"
-        style="width:100%; border: none">
+        alt="Band picture of singer in foreground and band in background in black and white" border-style="">
     </td>
   </tr>
 
   <tr>
-    <td class="nav" style="color: #fdf5e6; width: 40vw; padding: 30px">
-      <img id="logo" class="header" src="https://i.ibb.co/HzNwnsC/Asset-6.png" alt="CURL logo"
-        style="color: #fdf5e6; width: 40vw; padding: 30px">
+    <td class="nav" color="oldlace">
+      <img id="logo" class="header" src="https://i.ibb.co/HzNwnsC/Asset-6.png" alt="CURL logo" border-style=""
+        width=" 40vw" padding=" 30px">
     </td>
   </tr>
 
-  <tr max-width="600px">
-    <td style="color: #fdf5e6 ">
-      <h1 style="margin: 30px">BIOGRAPHY</h1>
-      <p style="margin: 30px"><span class="capital">A</span>nglo-French quartet Curl are set to release their fourth
-        album,
+  <tr max-sidth=""600px>
+    <td>
+      <h1>BIOGRAPHY</h1>
+      <p><span class="capital">A</span>nglo-French quartet Curl are set to release their fourth album,
         Interferometry. Final mixes
         and post production work are about to be completed. Photography, text/logo/fonts and artwork are being
         developed.
@@ -100,8 +321,8 @@
 
   <tr class="buttonsForMusicAll" max-width="600px">
 
-    <td style="color: #fdf5e6; margin: 30px">
-      <h1 style="color: #fdf5e6; margin: 30px">MUSIC</h1>
+    <td>
+      <h1>MUSIC</h1>
       <div class="buttonsForMusic">
         <a
           href="https://soundcloud.com/curl-uk-france/sets/curl-album-2024-taster-private/s-DRKyd5v9b2Q?si=0c0bf32248a54ca5a88a06a1c02bed2e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
@@ -130,13 +351,16 @@
   </tr>
 
   <tr max-width="600px">
-    <td max-width="600px" display="inline-block" justify-content="space-evenly">
+    <td max-width="600px">
       <h1>RELEASES</h1>
+      <div class="albums">
 
-      <div max-width="600px" display="inline-block" justify-content="space-evenly">
         <a href="https://d-monic.bandcamp.com/album/we-are-complex">
-          <button height: 200px; width: 200px; text-decoration: none;>
-            <img src="https://i.ibb.co/NyVN7sR/01-We-Are-Complex.jpg" alt="CURL logo" border-style="" width="200px">
+          <button class="complex albums"  style="background-image:url('https://i.ibb.co/NyVN7sR/01-We-Are-Complex.jpg')"
+          background-size: cover;
+          height: 200px;
+          width: 200px;
+          text-decoration: none;>
           </button>
         </a>
 
@@ -163,19 +387,16 @@
   <tr>
     <td>
       <h1>VIDEO</h1>
-
-      <media style=" width:500; height:300; frameborder:0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-        src="https://www.youtube.com/embed/qn0gzJHURtk?si=bSLYVf9PfJiOQW6s" title="YouTube video player" frameborder="0"
-        class="video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></media>
-      <media width="500" height="300" src="https://www.youtube.com/embed/fghs6AJVhyc?si=8-s_Brkehfn7Egpg"
-        title="YouTube video player" frameborder="0" class="video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></media>
-
+      <div class="videos">
+        <object width="500" height="300" src="https://www.youtube.com/embed/qn0gzJHURtk?si=bSLYVf9PfJiOQW6s"
+          title="YouTube video player" frameborder="0" class="video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></object>
+        <object width="500" height="300" src="https://www.youtube.com/embed/fghs6AJVhyc?si=8-s_Brkehfn7Egpg"
+          title="YouTube video player" frameborder="0" class="video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></object>
+      </div>
     </td>
   </tr>
 
